@@ -49,9 +49,10 @@
         </span>
         <script type="text/javascript">
             const per = document.getElementById("chance");
-            const adder = -15;
+            const adder = -20;
             function crack(num){
                 const rn = rnd();
+                console.log(rn);
                 if(num==3) {
                     if(document.getElementById("thr").innerText[18] == "◆") {
                         return;
@@ -114,7 +115,6 @@
                         per.innerHTML=Number(per.innerHTML)-10;
                         let i = 0;
                         while(true) {
-                            console.log(i);
                             if(document.getElementById("one").innerHTML[i]=="◇") {
                                 document.getElementById("one").innerHTML = document.getElementById("one").innerHTML.slice(0,i)+"◆"+cutter(document.getElementById("one").innerText); 
                                 break;
@@ -126,7 +126,6 @@
                         per.innerHTML=Number(per.innerHTML)+10;
                         let i = 0;
                         while(true) {
-                            console.log(i);
                             if(document.getElementById("one").innerHTML[i]=="◇") {
                                 document.getElementById("one").innerHTML = document.getElementById("one").innerHTML.slice(0,i)+"<font color=\"lightgray\">◆</font>"+cutter(document.getElementById("one").innerText); 
                                 break;
