@@ -56,7 +56,7 @@
                     if(document.getElementById("thr").innerText[18] == "◆") {
                         return;
                     }
-                    if(rn < Number(per.innerHTML) ) {  //성공 인데 깨진거
+                    if(rn < Number(per.innerHTML+20) ) {  //좋은건데 깨진거
                         per.innerHTML=Number(per.innerHTML)+10;
                         let i = 0;
                         while(true) {
@@ -83,7 +83,7 @@
                     if(document.getElementById("two").innerText[18] == "◆") {
                         return;
                     }
-                    if(rn < Number(per.innerHTML) ) {  //성공 좋은거1
+                    if(rn < Number(per.innerHTML+20) ) {  //성공 좋은거1
                         per.innerHTML=Number(per.innerHTML)-10;
                         let i = 0;
                         while(true) {
@@ -110,7 +110,7 @@
                     if(document.getElementById("one").innerText[18] == "◆") {
                         return;
                     }
-                    if(rn < Number(per.innerHTML) ) {  //성공 좋은거
+                    if(rn < Number(per.innerHTML+20) ) {  //성공 좋은거
                         per.innerHTML=Number(per.innerHTML)-10;
                         let i = 0;
                         while(true) {
@@ -144,7 +144,7 @@
                 }
             }
             function rnd() {
-                return Math.floor(Math.random() * 80);
+                return Math.floor(Math.random() * 100);
             }
             function cutter(sen) {
                 for(let i = 0; i < sen.length; i++) {
